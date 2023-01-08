@@ -9,11 +9,11 @@ import SwiftUI
 
 struct MyVStackView: View {
     
-    //데이터를 연동시킨다.
+    //데이터를 연동시킨다. View간의.
     @Binding
     var isActivated: Bool
     
-    //생성자 Bool에 대한 기본값 constant
+    //Binding을 사용하기 위해서는 생성자 Bool에 대한 기본값 constant
     init(isActivated: Binding<Bool> = .constant(false)) {
         _isActivated = isActivated
     }
