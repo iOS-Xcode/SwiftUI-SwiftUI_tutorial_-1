@@ -15,6 +15,7 @@ struct ContentView: View {
         NavigationView {
             VStack {
                 HStack {
+                    //위의 @State isActivated 를 MyvStatckView init으로 값을 넘김 이때 Binding 에서 값을 받음.
                     MyVStackView(isActivated: $isActivated)
                     MyVStackView(isActivated: $isActivated)
                     MyVStackView(isActivated: $isActivated)
